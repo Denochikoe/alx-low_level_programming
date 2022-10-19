@@ -10,22 +10,18 @@
 int main(void)
 {
 	char i;
-	char j;
-
 	i = 'a';
-	j = 'A';
-
 	while (i <= 'z')
 	{
 		putchar(i);
 		i++;
 	}
-		
-		while (j <= 'Z')
-		{
-			putchar(j);
-			j++;
-		}
-	int putchar("i\\n + j\n");
+	i = 'A';	
+	while (i <= 'Z')
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
 	return (0);
 }
