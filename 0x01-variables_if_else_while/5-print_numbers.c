@@ -11,15 +11,10 @@
 int main(void)
 {
 	int i;
-	int j;
 
 	for (i = 0; i <= 9; i++)
 	{
-		j = i * 10;
-		if (j <= 9)
-		{
-			printf("%d", j);
-		}
+		printf("%d", i);
 	}
 	putchar('n');
 	return (0);
