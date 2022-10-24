@@ -5,7 +5,7 @@
  *
  * Description:'the program outputs hex numerals'
  *
- * return always (0) success
+ * Return: Always (0) success
  *
  */
 int main(void)
