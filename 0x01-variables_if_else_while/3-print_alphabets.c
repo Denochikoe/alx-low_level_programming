@@ -6,8 +6,8 @@
  * Description: 'the program outputs {a..z}{A..Z} in one line!'
  *
  * Return: Always (0) success
- *
-
+ */
+int main(void)
 {
 	char i;
 
@@ -17,7 +17,8 @@
 	putchar(i);
 	i++;
 	}
-	i = 'A';	
+
+	i = 'A';
 	while (i <= 'Z')
 	{
 	putchar(i);
