@@ -5,7 +5,7 @@
  *
  * Description:'the program outputs all possible hex char'
  *
- * Return (0) success
+ * Return: Always (0) success
  *
  */
 int main(void)
