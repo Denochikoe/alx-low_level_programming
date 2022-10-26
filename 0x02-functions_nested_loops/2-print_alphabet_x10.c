@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * prototype
+ * print_alphabet_x10-function prints the alphabet in lowercase 10 times.
  *
  * Description- 'the program prints the lowercase alphabet 10 times'
  *
@@ -19,7 +19,7 @@ void print_alphabet_x10(void)
 			_putchar(c);
 			c++;
 		}
-	  	_putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 }
