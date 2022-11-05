@@ -9,7 +9,7 @@ int main(void)
 	int i;
 	int mul;
 
-	for(i= 0; i < 1024; i++)
+	for(i = 0; i < 1024; i++)
 	{
 		if ( i % 3 == 0 || i % 5 == 0)
 		{
