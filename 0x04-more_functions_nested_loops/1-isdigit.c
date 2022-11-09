@@ -6,12 +6,5 @@
  */
 int _isdigit(int c)
 {
-	for (c >= 1; c <= 9; c++)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= '0' &&  c <= '9');
 }
