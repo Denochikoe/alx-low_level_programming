@@ -10,7 +10,7 @@ int main(void)
 	long int z;
 
 	z = 612852475143;
-	for ( a = 2; a < z; a++)
+	for (a = 2; a < z; a++)
 	{
 		while (z % a == 0)
 		{
