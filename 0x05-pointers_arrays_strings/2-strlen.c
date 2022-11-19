@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _strlen- counts pointers length
- * @n: pointer to a character param
+ * @s: pointer to a character param
  * Return: Always 0 success
  */
 int _strlen(char *s)
