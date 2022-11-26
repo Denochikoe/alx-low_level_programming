@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev- prints a atring in reverse.
- * s@: pointer to char, param
+ * @s: pointer to char, param
  * Return: void
  */
 void print_rev(char *s)
