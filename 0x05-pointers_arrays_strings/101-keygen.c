@@ -19,6 +19,7 @@ int main(void)
 		{
 			j = rand() % 62;
 			p[i] = c[j];
+			s += c[j];
 			i++;
 		}
 		while (c[k])
@@ -34,6 +35,6 @@ int main(void)
 		}
 	}
 	p[i] = '\0';
-	printf("%s", p);
+	printf("%s\n", p);
 	return (0);
 }
