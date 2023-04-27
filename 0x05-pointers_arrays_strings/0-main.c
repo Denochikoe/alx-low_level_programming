@@ -3,7 +3,11 @@
 /**
  * main - check the code
  *
+<<<<<<< HEAD
  * Return: Always 0
+=======
+ * Return: Always 0.
+>>>>>>> f0aefca0ce98496da1159d4fb57d2f4bf1f884f6
  */
 int main(void)
 {

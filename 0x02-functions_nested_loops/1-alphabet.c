@@ -1,22 +1,22 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * main-Entry point
+ * print_alphabet- Prints the alphabet in lowercase followed by a new line.
  *
- * Description: 'the program outputs lowercase alphabets'
+ * you can use 'putchar' once.
  *
- * Return: (0) success
+ * Return: Always (0) success.
  *
  */
-void print_alphabet(void);
-int main(void)
+void print_alphabet(void)
 {
-	char i;
+	char j;
 
-	for (i = 'a'; i <= 'z'; i++)
+	j = 'a';
+	while (j <= 'z')
 	{
-		putchar(i);
+		_putchar(j);
+		j++;
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
