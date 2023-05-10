@@ -13,11 +13,11 @@ void _opcode(char *a, int n)
 	printf("\n");
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int n;
 
-	if (argc < 3)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
