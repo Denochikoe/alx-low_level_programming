@@ -4,13 +4,13 @@
  * main- print multipication of input.
  * @argc: count
  * @argv: array
- * return: 0 or 1
+ * Return: 0 or 1
  */
 int main(int argc, char *argv[])
 {
 	int a, b, c;
 
-	if(argc < 3)
+	if(argc != 3)
 	{
 		puts("Error");
 		return(1);
@@ -22,5 +22,5 @@ int main(int argc, char *argv[])
 		c = a * b;
 		printf("%d\n", c);
 	}
-	return(0);
+	return (0);
 }
