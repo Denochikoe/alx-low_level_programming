@@ -5,14 +5,8 @@
  * @argv:  param 2
  * return: 0 or 1
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i;
-
-	for (i = 1; i < argc; i++)
-	{
-		printf("%d\n", i);
-	}
-	return(0);
+	printf("%d\n", argc - 1);
+	return (0);
 }
-
