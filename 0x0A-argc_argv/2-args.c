@@ -3,9 +3,9 @@
  * main- prints input.
  * @argc: param 1
  * @argv: param 2
- * return: 0 success.
+ * Return: 0 success.
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
@@ -14,5 +14,5 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		if (i >= 0)
 			printf("%s\n", argv[i]);
 	}
-	return(0);
+	return (0);
 }
