@@ -1,24 +1,31 @@
 #include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
+/**
+ * strup - creates a pointer that duplicates a
+ * string
+ * @str: param 1
+ * Return: allocated pointer or NULL
+ */
 char *_strdup(char *str)
 {
-	int i, j;
+	unsigned int i, j;
 	char *newstr;
 
-	if(str == NULL)
+	if (str == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	for(i = 0; str[i]; i++)
+	for (i = 0; str[i]; i++)
 	;
 	i++;
 	newstr = malloc(sizeof(char) * i);
-	if(newstr == NULL)
+	if (newstr == NULL)
 		return(NULL);
-	for(j = 0; j < i; j++)
+	for (j = 0; j < i; j++)
 	{
 		newstr[j] = str[j];
-		return(newstr);
+		return (newstr);
 	}
-	return(0);
+	return (0);
 }
