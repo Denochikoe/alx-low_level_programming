@@ -8,37 +8,39 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int end1, end2, i = 0;
-	char *s;
+int i, j, k, l;
+char *str;
 
-	if(s1 == NULL || s2 == NULL)
-	{
-		s1 = s2 = "";
-	}
-	for(end1 = 0; end1 <= *s1; end1++)
-	{
-	}
-	for(end2 = 0; end2 <= *s2; end2++)
-	{
-	}
-
-	s = malloc(sizeof(char) * (end1 + end2 + 1));
-
-	if(s == NULL)
-		return(NULL);
-
-	while(*s1)
-	{
-		s[i] = *s1;
-		i++;
-		s1++;
-	}
-	while(*s2)
-	{
-		s[i] = *s2;
-		i++;
-		s2++;
-	}
-	return(s);
-
+if (s1 == NULL)
+{
+i = 0;
+}
+else
+{
+for (i = 0; s1[i]; i++)
+;
+}
+if (s2 == NULL)
+{
+j = 0;
+}
+else
+{
+for (j = 0; s2[j]; j++)
+;
+}
+k = i + j + 1;
+str = malloc(k *sizeof(char));
+if (str == NULL)
+{
+return (NULL);
+}
+for (l = 0; l < i; l++)
+{
+		str[l] = s1[l];
+}
+for (l = 0; l < j; j++)
+str[l + i] = s2[l];
+str[i + j] = '\0';
+return (str);
 }
