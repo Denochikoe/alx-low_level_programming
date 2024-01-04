@@ -1,34 +1,31 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-char *argstostr(int ac, char **av)
+#include <stdlib.h>
+/**
+ * argstostr- concatenates arg to string
+ * ac: argument count
+ * av: argument vector
+ * Return: NULL or string
+ */
+char **argstostr(int ac, char **av)
 {
-	int i, j, k = 0, len = 0;
-	char *str;
+	int i, j, k;
+	char *results, *str;
 
-	if (ac == 0 || av == NULL)
-		return NULL;
+	if (ac == NULL || av == NULL)
+		return (NULL);
+	j = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; j++)
-			len++;
+		str = av[i];
+		while ( str != '\0')
+		{
+			j++;
+			str++;
+		}
+		j++;
 	}
-	len += ac;
+	results = (char *)malloc(j + 1);
+	if (results == NULL)
+		return (NULL);
 
-	str = malloc(sizeof(char) * len + 1);
-	if(str == NULL)
-	return(NULL);
-	for(i = 0; i < ac; i++)
-	{
-		for(j = 0; av[i][j]; j++)
-		{
-			str[k] = av[i][j];
-			k++;
-		}
-		if(str[k] == '\0')
-		{
-			str[k + 1] = '\n';
-		}
-	}
-	return(str);
 }
