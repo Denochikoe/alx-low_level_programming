@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - deferences pointer to new value
+ * return: 9
+ */
 int main(void)
 {
 int n;

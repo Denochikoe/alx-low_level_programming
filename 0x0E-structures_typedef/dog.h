@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG_H_
+#define DOG_H_
 /**
  * Struct dog- initializes dog
  * @name: param 1
@@ -13,11 +13,11 @@ struct dog
 	char *owner;
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
-<<<<<<< HEAD
-=======
 void print_dog(struct dog *d);
+/**
+ *dog_t - initializes type struct dog
+ */
 typedef struct dog dog_t;
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
->>>>>>> a362c8c0ec0219d1dc8e64e3857ce0f18c41c1b3
-#endif
+#endif /* DOG_H_ */
