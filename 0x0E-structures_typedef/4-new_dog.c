@@ -1,5 +1,12 @@
 #include "dog.h"
 #include <stdlib.h>
+/**
+ * new_dog- pointer to struct
+ * @name: param 1
+ * @age: param 2
+ * @owner: param 3
+ * Return: struct
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i, j, k;
