@@ -15,4 +15,4 @@ typedef struct print
 	void (*f)(va_list);
 } print_t;
 void print_all(const char * const format, ...);
-#endif
+#endif /* _VARIADIC_FUNCTIONS_H_ */
