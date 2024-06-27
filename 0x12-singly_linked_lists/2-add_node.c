@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * _strlen: finds the length of str
+ * _strlen- finds the length of str
  * @str: string to be counted.
  * Return: return the counter value.
  */
@@ -19,9 +19,9 @@ unsigned int _strlen(char *str)
 
 /**
  * add_node - adds a new node to list (beginning).
- * @head - double pointer to the new node.
- * @str - pointer to be added to new node.
- * return: pointer to new node.
+ * @head: double pointer to the new node.
+ * @str: pointer to be added to new node.
+ * Return: pointer to new node.
  */
 list_t *add_node(list_t **head, const char *str)
 {
