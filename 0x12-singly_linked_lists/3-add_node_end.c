@@ -14,7 +14,7 @@ unsigned int _strlen(char *str)
 	{
 		;
 	}
-	return(i);
+	return (i);
 }
 /**
  * add_node_end - add node at the end of the list.
@@ -27,17 +27,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *new, *tmp;
 
 	if (str == NULL)
-		return(NULL);
+		return (NULL);
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	new->str = strdup(str);
 	if (new->str == NULL)
 	{
 		free(new);
-		return(NULL);
+		return (NULL);
 	}
 	new->len = _strlen(new->str);
 	new->next = NULL;
@@ -50,7 +50,5 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (tmp->next)
 		tmp = tmp->next;
 	tmp->next = new;
-	return(new);
-
-
+	return (new);
 }
