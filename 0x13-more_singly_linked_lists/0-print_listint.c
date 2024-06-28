@@ -2,8 +2,8 @@
 #include "lists.h"
 /**
  * print_listint - number of elements and interger.
- * @h - list of elements.
- * return: number of elements and integer.
+ * @h:list of elements.
+ * Return: number of elements and integer.
  */
 size_t print_listint(const listint_t *h)
 {
