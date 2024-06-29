@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * reverse_listint_t - reverses a list.
+ * reverse_listint - reverses a list.
  * @head: pointer to a list pointer.
  * Return: reverse of list.
  */
