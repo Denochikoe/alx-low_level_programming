@@ -23,7 +23,7 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 		newlist[i] = list[i];
 	newlist[i] = new;
 	free(list);
-	return(newlist);
+	return (newlist);
 }
 /**
  * print_listint_safe- prints a list.
@@ -41,7 +41,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (head == list[i])
 			{
-				printf("-> [%p] %d\n", (void * )head, head->n);
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				free(list);
 				return (num);
 			}
@@ -52,6 +52,6 @@ size_t print_listint_safe(const listint_t *head)
 		head = head->next;
 	}
 	free(list);
-	return(num);
+	return (num);
 }
 
