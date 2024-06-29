@@ -28,7 +28,7 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 /**
  * print_listint_safe- prints a list.
  * @head: pointer to the beginning of the list.
- * return: number of nodes in th list.
+ * Return: number of nodes in th list.
  */
 size_t print_listint_safe(const listint_t *head)
 {
