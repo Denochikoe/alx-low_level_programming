@@ -59,7 +59,7 @@ void check99(ssize_t check, char *file, int fd_from, int fd_to)
 }
 /**
  * check100 - checks thet file descriptors were closed properly
- * @checks: checks if true or false
+ * @check: checks if true or false
  * @fd: file descriptor
  * Return: void
  */
