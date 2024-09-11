@@ -20,5 +20,8 @@ typedef struct dlistint_s
 } dlistint_t;
 
 size_t print_dlistint(const dlistint_t *h);
+<<<<<<< HEAD
 size_t dlistint_len(const dlistint_t *h);
+=======
+>>>>>>> 3c3526672cb35ec811b56af1f5f36b5e779b7679
 #endif /* LISTS_H */
