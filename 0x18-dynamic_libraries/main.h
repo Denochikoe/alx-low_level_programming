@@ -25,4 +25,6 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 int source_0(void);
+int source_1(void);
+int source_2(void);
 #endif
